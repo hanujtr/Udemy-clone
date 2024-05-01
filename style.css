@@ -18,11 +18,16 @@ body {
     border-bottom: solid black 1px;
     gap: 10px;
     align-items: center;
+    position: sticky;
+    top: 0;
+    background-color: white;
+    z-index: 1 ;
 }
 
 .nav-s1 {
     color: blueviolet;
     align-items: center;
+    
 }
 
 .nav-s2 {
@@ -40,6 +45,7 @@ body {
     width: 100%;
     font-size: 15px;
     align-items: center;
+    background-color: transparent;
 }
 
 .nav-s2 input:focus {
@@ -49,6 +55,30 @@ body {
 .nav-s3 {
     display: flex;
     gap: 20px;
+    align-items: center;
+}
+.learning{
+    cursor: pointer;;
+}
+.mylearning {
+    position: relative;
+    bottom: 20px;
+    
+}
+.pop-up p{
+    margin: 0;
+    padding: 10px;
+}
+.pop-up{
+    position: absolute;
+    background-color: cornsilk;
+    border: solid black 1px;
+    width: 120px;
+    height: 70px;
+    display: none;
+}
+.learning :hover .mylearning{
+    display: block ;
 }
 
 .cat-sec {
@@ -68,10 +98,31 @@ body {
 
 .sale img {
     width: 100%;
+    margin: 0;
+    padding: 0;
+    position: relative;
+}
+.saleoff{
+    border: solid black 2px;
+    width: 35%;
+    background-color: white;
+    padding: 2%;
+    position: absolute;
+    top: 25%;
+    left: 5%;
+}
+.saleoff p{
+    padding: 0;
 }
 
 .src-title {
     padding: 10px;
+    margin: 0;
+}
+.src-title p{
+    font-size: 25px;
+    margin: 0;
+    padding: 0;
 }
 
 .main-src {
@@ -96,6 +147,7 @@ body {
 .related {
     display: flex;
     flex-wrap: wrap;
+    gap: 10px;
 }
 
 .related p {
