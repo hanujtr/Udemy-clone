@@ -87,6 +87,7 @@ body {
     gap: 10px;
     justify-content: space-around;
     border-bottom: solid black 1px;
+    cursor: pointer;
 }
 
 .cat-sec__para {
@@ -94,13 +95,20 @@ body {
     color: white;
     padding: 10px;
     border-radius: 20px;
+    border: solid blueviolet 1px;
+}
+.cat-sec :hover{
+    transition: 0.5s;
+    background-color: transparent;
+    color: black;
+    border: solid blueviolet 1px;
 }
 
 .sale img {
     width: 100%;
     margin: 0;
     padding: 0;
-    position: relative;
+    position: relative;    
 }
 .saleoff{
     border: solid black 2px;
@@ -110,6 +118,20 @@ body {
     position: absolute;
     top: 25%;
     left: 5%;
+    animation-name: zoom;
+    animation-duration: 2s;
+    opacity: 0;
+    animation-fill-mode: forwards;
+}
+@keyframes zoom{
+    0%{
+        transform: scale(0);
+        opacity: 0;
+    }
+    100%{
+        transform: scale(1);
+        opacity: 1;
+    }
 }
 .saleoff p{
     padding: 0;
